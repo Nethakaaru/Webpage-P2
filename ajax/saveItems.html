@@ -1,0 +1,17 @@
+﻿<h1>Spara saker</h1>
+
+<form action="server.php" enctype="multipart/form-data" method="post" id="myForm">
+  <select name="type">
+  <option value="photo">Foto</option>
+  <option value="video">Video</option>
+  <option value="audio">Ljud</option>
+  </select>
+  <input type="file" name="media" accept="image/*" capture="camera" class="btnUpload">
+   <input type="text" name="title" placeholder="Namn på saken">
+  
+  <input type="submit" value="Spara media" class="btn">
+</form>
+
+<h3 class="percent">0% klart</h3> 
+
+<script type="text/javascript" src="findUploadType.js"></script>
